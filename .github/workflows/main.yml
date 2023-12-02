@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: "Login to Docker hun"
-        run: docker login --username Anashany219  --password dckr_pat_Qk0gFzMyiYv06FdBPgXj1NPCGPs
+        run: docker login --username anashany219  --password dckr_pat_Qk0gFzMyiYv06FdBPgXj1NPCGPs
