@@ -5,15 +5,15 @@ on:
     
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      - name: "Login to Docker hun"
+      - name: "Login to Docker hun" 
         run: docker login --username ${{ secrets.DOCKERUSERNAME }}  --password ${{ secrets.DOCKERTOKEN }}
       
       - name: "Building Docker Image"
-        run: docker build -t ${{ secrets.DOCKERUSERNAME }}/sec_task .
+        run: docker build -t ${{ secrets.DOCKERUSERNAME }}/my_Image .
 
       - name: "Pushing to Docker Hub"
-        run: docker push ${{ secrets.DOCKERUSERNAME }}/sec_task
+        run: docker push ${{ secrets.DOCKERUSERNAME }}/my_Image
