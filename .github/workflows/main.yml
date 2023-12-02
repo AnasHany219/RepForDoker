@@ -5,10 +5,9 @@ on:
     
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: 'Testing Github action'
-        run: pwd
+        run: echo %cd%
       - name: 'Testing Printing'
         run: echo Anas
-        
