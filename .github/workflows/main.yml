@@ -8,6 +8,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: 'Testing Github action'
-        run: echo %cd%
+        run: pwd
       - name: 'Testing Printing'
         run: echo Anas
